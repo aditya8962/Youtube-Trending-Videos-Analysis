@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='aboutus.css')}}">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us</title>
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+{%  include 'navbar.html' %}
+
+<div class="obj">
+  <h2>This Project Has Following Objectives:</h2>
+  <ul>
+<li>To understand characteristics that makes a video end up
+in trending section on YouTube</li>
+<li>To grasp knowledge about YouTube's algorithm and
+extract key aspects that can be used to improve growth
+of YouTube channels.</li>
+<li>Provide content creators and other digital businesses
+with information about features required to make a
+video that trends and reaches to maximum people.</li>
+<li>To accelerate a channels growth and increase their
+subscriber count by making trending videos.</li>
+<li>By increasing subscriber count and views this can help
+you youtuber's to earn more money, sponsorships and
+opportunities to excel in their social media carrier</li>
+  </ul>
+  
+</div>
+  <div class="developers">  <h2>Developed By: </h2>
+  </div>
+            
+  <div class="row">
+  <div class="column">
+    <img src="{{url_for('static',filename='aditya.jpg')}}"   height="300" width="100%">
+    <p align="center">Aditya Manthankar</p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename='anubhav.jpg')}}"   height="300" width="100%">
+    <p align="center">Anubhav Hardia</p>
+  </div>
+  <div class="column">
+    <img src="{{url_for('static',filename='anima_new.jpg')}}"  height="300" width="100%">
+    <p align="center">Anima Jain</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>

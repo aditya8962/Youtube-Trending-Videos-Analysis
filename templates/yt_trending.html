@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title> Youtube Trending Section </title>
+</head>
+<body>
+  {%  include 'navbar.html' %}
+  <div class="yt_trending">
+  	<h1> Trending Section</h1>
+  	<img align ="right"  src="{{url_for('static',filename='trending.png')}}">
+  	<p>Trending helps viewers see what’s happening on YouTube and in the world. Trending aims to surface videos that a wide range of viewers would find interesting. Some trends are predictable, like a new song from a popular artist or a new movie trailer. Others are surprising, like a viral video.
+</p>
+<br>
+<p>Trending isn't personalized and displays the same list of trending videos in each country to all users, which is why you may see videos in Trending that aren’t in the same language as your browser. However, in India, Trending displays the same list of trending videos for each of the 9 most common Indic languages.</p>
+<br>
+<p>	The list of trending videos is updated roughly every 15 minutes. With each update, videos may move up, down, or stay in the same position in the list.	</p>
+<br>
+<h2>What determines if a video is ranked on Trending? </h2>
+<h5>	Amongst the many great new videos on YouTube on any given day, Trending can only show a limited number. Trending aims to surface videos that:</h5>
+
+<ul>
+  <li>Are appealing to a wide range of viewers</li>
+  <li>Are not misleading, clickbaity or sensational</li>
+  <li>Capture the breadth of what’s happening on YouTube and in the world</li>
+  <li>Showcase a diversity of creators</li>
+  <li>Ideally, are surprising or novel</li>
+</ul> 
+<br>
+<h5>Trending aims to balance all of these considerations. To achieve this, Trending considers many signals, including (but not limited to):</h5> 
+<ul>
+  <li>View count</li>
+  <li>How quickly the video is generating views (i.e. “temperature”)</li>
+  <li>Where views are coming from, including outside of YouTube</li>
+  <li>The age of the video</li>
+  <li>How the video performs compared to other recent uploads from the same channel</li>
+</ul> 
+  </div>
+</body>
+</html>

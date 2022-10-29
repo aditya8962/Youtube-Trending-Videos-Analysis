@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='analysis.css')}}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Analysis </title>
+</head>
+<body>
+{%  include 'navbar.html' %}
+<h1>  Regional Analysis </h1>
+<center>
+	<img  src="{{url_for('static',filename='analysis2.jpg')}}">
+</center>
+<br><br>
+<h2> Top-10 Day of Most Titles in A Day:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 Day of Most unique titles in a day.jpg')}}">
+<br>
+<br>
+<br>
+<h2> Top-10 channels On Trending Page:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 channels On Trending Page.jpg')}}">
+
+<br>
+<br>
+<br>
+<h2> Top Video Categories On Trending Page:</h2>
+<img  align="right" src="{{url_for('static',filename='category.jpeg')}}">
+<img  src="{{url_for('static',filename='IN_Top Video Categories On Trending Page.jpg')}}">
+
+
+<br>
+<br>
+<br>
+<h2> Top-10 Video categories with most no. of unique videos on same day trending page:</h2>
+
+<img  src="{{url_for('static',filename='IN_Top-10 Video categories with most no. of unique videos on same day trending page.jpg')}}">
+
+<br>
+<br>
+<br>
+<h2> Top-10 Channels with Most no. of unique videos on same day trending page:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 Channels with most no. of unique videos on same day trending page.jpg')}}">
+
+
+
+<br>
+<br>
+<br>
+<h2> Videos with the longest time to came on trending page:</h2>
+<img  src="{{url_for('static',filename='IN_Videos with longest time to came on trending page.jpg')}}">
+
+<br>
+<br>
+<br>
+<h2> Top-10 Videos with Most Views:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 Videos with Most Views.jpg')}}">
+
+<br>
+<br>
+<br>
+<h2> Top-10 Videos with Most Likes:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 Videos with Most Likes.jpg')}}"><br>
+<br>
+<br>
+<h2> Top-10 Videos with Most Dislikes:</h2>
+<img  src="{{url_for('static',filename='IN_Top-10 Videos with Most Dislikes.jpg')}}">
+</body>
+</body>
+</html>
